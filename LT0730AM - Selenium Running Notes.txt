@@ -51,3 +51,113 @@ Exception in thread "main" java.lang.IllegalStateException:
 The path to the driver executable must be set by the webdriver.chrome.driver system property; 
 for more information, see https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver. 
 The latest version can be downloaded from http://chromedriver.storage.googleapis.com/index.html
+
+
+*******************************************
+Season -1 Selenium  
+Day  -28th September  - Thursday 
+*******************************************	
+
+
+?????????????????????????????
+Assignment 
+
+write a script to 
+
+Launch Edge browser  (EdgeDriver)
+
+launch Firefox browser (FirefoxDriver)
+
+????????????????????????????????
+
+
+WebDriverManager (API) 
+
+
+https://github.com/bonigarcia/webdrivermanager
+
+webdrivermanager-5.5.3
+
+
+webdrivermanager-5.5.3-fat.jar
+
+==========================================
+Methods in WebDriver(I)  - 13 methods 
+===========================================
+
+
+org.openqa.selenium.WebDriver.ImeHandler
+org.openqa.selenium.WebDriver.Navigation
+org.openqa.selenium.WebDriver.Options
+org.openqa.selenium.WebDriver.TargetLocator
+org.openqa.selenium.WebDriver.Timeouts
+org.openqa.selenium.WebDriver.Window
+
+
+
+findElement(By)
+findElements(By)
+switchTo()
+
+
+-----------------------------
+get(String):void 
+
+here String is the url of the web app 
+
+this method will launch the app 
+
+--------------------------------
+close():void  this method will close the tab or window on which webdriver focus is 
+
+close methodd will close only one tab 
+
+
+------------------------------------
+
+quit():void this method will close all tabs or windows opened during that session 
+
+Interview :  diff b/w close and quit 
+
+Close : will close one tab or window on which webdriver focus is 
+ -> this will not kill chromedriver.exe task running in the backend
+
+quit : will close all tabs/windows opened during that session 
+-> this will  kill chromedriver.exe task running in the backend
+
+-------------------------------------------
+
+------------------------------------
+getTitle():String this will return the title of page in String format
+
+------------------------------------
+getCurrentUrl():String this will return the url of page in String format
+
+----------------------------------------
+getPageSource():String this will return the html code of the page 
+--------------------------------------------
+getWindowHandle():String this will return the window id of the tab or window on which webdriver focus 
+
+0-9 A-F 
+
+CEF9710A8094440DCF57F1AE4F081C56
+
+--------------------------------------------------
+getWindowHandles():Set<String>  this will return the window ids of all tab's or windows 
+opened during the session in a collection form
+--------------------------------------------------
+
+manage(): Options 
+
+this will help in managing the window sizes , cookies , synchronization etc..
+
+
+-----------------------------------------
+navigate(): Navigation
+
+back()
+forward()
+refresh()
+to(String)
+to(URL)
+------------------------------------------

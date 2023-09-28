@@ -7,5 +7,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="D:/005 Live Tech/jars/selenium-server-standalone-3.141.59 (4).jar"/>
+	<classpathentry kind="lib" path="D:/005 Live Tech/jars/webdrivermanager-5.5.3-fat.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
