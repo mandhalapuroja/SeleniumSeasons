@@ -95,11 +95,6 @@ org.openqa.selenium.WebDriver.Window
 
 
 
-findElement(By)
-findElements(By)
-switchTo()
-
-
 -----------------------------
 get(String):void 
 
@@ -161,3 +156,138 @@ refresh()
 to(String)
 to(URL)
 ------------------------------------------
+
+*******************************************
+Season -1 Selenium  
+Day  -05th Oct  - Thursday 
+*******************************************	
+
+
+------------------------------------------
+switchTo():TargetLocator
+--------------------------------------------
+
+findElement(By): WebElement
+
+
+Locators in Selenium (8):
+
+
+By 
+
+className(String)
+cssSelector(String)
+id(String)
+linkText(String)
+name(String)
+partialLinkText(String)
+tagName(String)
+xpath(String)
+
+
+HMTL Terminologies:
+
+
+<input type="text" name="username" id="username" class="login_input" value="" fdprocessedid="kgaeol">
+
+<a href="Register.php">New User Register Here</a>
+
+
+<tagname attribute1="value of attribute1"  attribute2="value of attribute2" ...attributen="value of attributen">
+
+<tagname attribute1="value of attribute1"  attribute2="value of attribute2" ...attributen="value of attributen">text on webelement</tagName>
+
+
+
+Based on attributes :
+
+id(String)
+name(String)
+className(String)
+
+Based on link text :
+
+linkText(String)
+partialLinkText(String)
+
+
+<img src="images/home.gif" width="118" height="23" border="0">
+
+
+Based on tagname and/or attributes and/or text one element :
+
+xpath(String)
+
+cssSelector(String)
+
+
+based on tagname only 
+
+tagName(String)  
+
+findElements(By)
+
+*******************************************
+Season -1 Selenium  
+Day  -06th Oct  - Friday 
+*******************************************	
+
+Methods in WebElement (16) 
+
+
+findElement(By)
+findElements(By)
+
+
+
+
+
+
+
+----------------------------
+sendKeys(CharSequence...):void 
+CharSequence... means here String 
+-------------------------------------
+click():void 
+--------------------------------
+clear():void 
+--------------------------------
+getText():String
+--------------------------------
+getAttribute(String):String
+
+case 1: attribute having value 
+o/p: value of attribute
+
+case 2: attirbute not present 
+o/p: null
+
+case 3: attibute but without value 
+o/p: true
+
+------------------------------------
+
+getCssValue(String):String 
+
+---------------------------------------
+
+getLocation():Point
+getRect():Rectangle
+getSize():Dimension
+
+---------------------------------------
+
+isDisplayed():boolean
+isEnabled():boolean
+isSelected():boolean  ==> for dropdown ,check box , radio button
+
+-----------------------------------------
+
+submit():void 
+
+----------------------------------------
+
+
+getTagName():String 
+--------------------------------------
+
