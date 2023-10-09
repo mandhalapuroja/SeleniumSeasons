@@ -423,18 +423,67 @@ subList(int, int):List<E>
 ArrayList(C)
 
 
-ArrayList()
+ArrayList()  //default capacity is 10
 ArrayList(int)
 ArrayList(Collection<? extends E>)
 
 
+The Integer class wraps a value of the primitive type int in an object. An object of type Integercontains a single field whose type is int. 
 
 
 
+*******************************************
+Season -2 Java   
+Day  - 9th October - Monday
+*******************************************
 
 
 
+Set(I):
+
+add(E):boolean 
+
+addAll(Collection<? extends E>):boolean
+
+contains(Object):boolean 
+
+isEmpty():boolean
+
+remove(Object):boolean 
+
+size():int 
 
 
+
+-----------------------
+HashSet(C):
+
+
+HashSet()  //default capacity is 16 
+HashSet(int)
+HashSet(int, float)
+HashSet(int, float, boolean)
+HashSet(Collection<? extends E>)
+
+
+
+HashSet Uses hashing technique to store elements 
+
+the default implementation of HashSet is HashMap 
+
+add(100)
+
+add("Live Tech")  
+
+----------------------------------
+Cursor or Iterator 
+
+iterator():Iterator<E>
+
+Iterator(I)
+
+
+hasNext():boolean  //this will check is there  any Element present in next level 
+next():E  // this will retrive the element present in next level and also moves the cursor to next level 
 
 
