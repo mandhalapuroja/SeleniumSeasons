@@ -487,3 +487,118 @@ hasNext():boolean  //this will check is there  any Element present in next level
 next():E  // this will retrive the element present in next level and also moves the cursor to next level 
 
 
+*******************************************
+Season -2 Selenium   
+Day  - 12th October - Thursday
+*******************************************
+
+Links Testing :
+
+tagname : a 
+
+mandatory attribute : href 
+
+optional attribues : id , name ,class etc ..
+
+findElements(By):List<WebElement>
+
+---------------------------------------------------------------------------
+
+xpath writing technique:
+
+
+<tagname attribute1="value of attribute1"  attribute2="value of attribute2" ...attributen="value of attributen">
+
+<tagname attribute1="value of attribute1"  attribute2="value of attribute2" ...attributen="value of attributen">text on webelement</tagName>
+
+
+
+xpath based on tagname and attributes :
+
+//tagname[@attribute='value of attribute']
+
+//input[@id='username']
+
+
+
+xpath based on tagname and text :
+
+//tagname[text()='text on webelement']
+
+//a[text()='New User Register Here']
+
+????????????????????????????????????????
+https://www.pepperfry.com/
+
+find no of links under "Partner With Us"
+
+and also text present on the link
+?????????????????????????????????????????
+
+
+*******************************************
+Season -2 Selenium   
+Day  - 13th October - Friday
+*******************************************
+
+Dropdown Testing (cont ...)
+
+tagname for items in dropdwon is optional
+
+MEthod 1:
+
+//WebElement dropdown=driver.findElement(By.xpath("//select[@id='searchDropdownBox']"));
+
+		
+//List<WebElement> allItems=dropdown.findElements(By.tagName("option"));
+
+
+Method 2: 
+
+using Select class method getOptions():List<WebElement>
+
+List<WebElement> allItems=new Select(driver.findElement(By.xpath("//select[@id='searchDropdownBox']"))).getOptions();
+
+
+
+Exception in thread "main" org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=118.0.5993.71)
+
+Reason : change in DOM (document object model ) 
+
+solution : create new reference or object 
+
+
+============================
+TestNG
+===========================
+
+Unit Testing famework :
+
+Java : junit , TestNG
+
+Python : pytest , unittest 
+
+.net : Nunit 
+
+
+
+TestNG  = junit + nUnit
+
+
+
+how to install TestNG plugin?
+
+- In Eclipse 
+
+go to "help" --> "Eclipse Market place"
+
+enter testng in "find" text fields
+
+click on "go" button
+
+
+you will see "TestNG for Eclipse" plugin 
+
+click on "Install"
+  
